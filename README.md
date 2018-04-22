@@ -1,10 +1,10 @@
 # vscode
 
-Installs [Visual Studio Code](https://code.visualstudio.com/)
+Installs [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Usage
 
-Add the `"recipe[vscode]"`to your runlist or include with `include_recipe[vscode::default]`
+Add the `"recipe[vscode]"` to your runlist or include with `include_recipe[vscode::default]`.
 
 ## Contributing
 
