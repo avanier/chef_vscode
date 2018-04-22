@@ -1,0 +1,16 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: fedora27_workstation
+    driver:
+      box: 'generic/fedora27'
+
+suites:
+  - name: default
+    run_list:
+      - recipe[vscode::default]
