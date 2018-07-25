@@ -9,6 +9,9 @@ platforms:
   - name: fedora27_workstation
     driver:
       box: 'generic/fedora27'
+  - name: centos7_workstation
+    driver:
+      box: generic/centos7
 
 suites:
   - name: default
