@@ -1,5 +1,7 @@
 # vscode
 
+[![Cookbook Version](https://img.shields.io/cookbook/v/vscode.svg)](https://supermarket.chef.io/cookbooks/vscode)
+
 Installs [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Usage
