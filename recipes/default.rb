@@ -16,7 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-abort 'This cookbook is only usable with Fedora' unless node['platform'] == 'fedora'
+unless (node['platform'] == 'fedora' && node['platform_version'].to_f >= 22.0) ||
+       (node['platform'] == 'centos' && node['platform_version'].to_f >= 7.0)
+  abort 'This cookbook currently supports only Fedora and CentOS 7.'
+end
 
 yum_repository 'vscode' do
   description 'Visual Studio Code'
